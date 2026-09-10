@@ -10,12 +10,14 @@
   <meta name="apple-mobile-web-app-title" content="【Afternoon Tea in Tokyo】回答フォーム">
 
   <style>
+
     body {
       margin: 0;
       min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       background: #fff;
       color: #111;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,6 +29,8 @@
       padding: 30px 20px;
     }
 
+
+    /* タイトル */
     h1 {
       font-size: 26px;
       text-align: center;
@@ -38,40 +42,56 @@
       display: block;
     }
 
+
+    /* アイコン */
     img {
       width: 128px;
       height: 128px;
       border-radius: 26px;
       object-fit: cover;
-      margin: 0 0 24px;
+      margin: 0;
     }
-　　.intro {
-  　　margin: 0 0 32px;
-　　  line-height: 1.7;
-　　}
 
-　　.complete {
-　　  margin: 32px 0 18px;
- 　　 line-height: 1.7;
-　　}
 
-    .steps {
-　　  width: calc(100% - 38px);
-　　  margin: 0 0 22px 38px;
- 　　 text-align: left;
-　　}
-
-　　.steps p {
- 　　 margin: 0 0 16px;
-　　  line-height: 1.8;
-　　  text-align: left;
-　　}
-
-    .complete {
-      margin: 0 0 18px;
+    /* 「初めての場合は〜」 */
+    .intro {
+      margin-top: 32px;
+      margin-bottom: 32px;
       line-height: 1.7;
+      text-align: center;
     }
 
+
+    /* 1〜4の説明 */
+    .steps {
+      width: calc(100% - 40px);
+      margin-left: 40px;
+      margin-right: 0;
+      text-align: left;
+    }
+
+    .steps p {
+      margin: 0 0 18px 0;
+      padding: 0;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .steps p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* 「初期設定完了です」 */
+    .complete {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+
+    /* フォームボタン */
     a {
       display: block;
       padding: 16px 18px;
@@ -82,8 +102,11 @@
       font-size: 17px;
       font-weight: 600;
     }
+
   </style>
+
 </head>
+
 
 <body>
 
@@ -94,22 +117,32 @@
       <span>回答フォーム</span>
     </h1>
 
+
     <img src="./icon.png" alt="Valextra">
+
 
     <p class="intro">
       初めての場合は下記を行ってください
     </p>
 
+
     <div class="steps">
+
       <p>1. Safariのメニュー「・・・」から共有を押下</p>
+
       <p>2.「ホーム画面に追加」をタップ</p>
+
       <p>3. ホームに追加されたことを確認してください</p>
+
       <p>4. 店舗または自身のMicrosoftアドレスでログイン</p>
+
     </div>
+
 
     <p class="complete">
       初期設定完了です
     </p>
+
 
     <a href="https://forms.cloud.microsoft/r/sTgCMAZXGN">
       フォームに記入する
@@ -118,4 +151,5 @@
   </main>
 
 </body>
+
 </html>
