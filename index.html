@@ -10,14 +10,12 @@
   <meta name="apple-mobile-web-app-title" content="【Afternoon Tea in Tokyo】回答フォーム">
 
   <style>
-
     body {
       margin: 0;
       min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       background: #fff;
       color: #111;
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -29,7 +27,6 @@
       padding: 30px 20px;
     }
 
-    /* タイトル */
     h1 {
       font-size: 26px;
       text-align: center;
@@ -41,7 +38,6 @@
       display: block;
     }
 
-    /* アイコン */
     img {
       width: 200px;
       height: 200px;
@@ -50,7 +46,6 @@
       margin: 0;
     }
 
-    /* 「初めての場合は下記を行ってください」 */
     .intro {
       margin-top: 48px;
       margin-bottom: 48px;
@@ -58,7 +53,6 @@
       text-align: center;
     }
 
-    /* 1〜4の説明 */
     .steps {
       width: calc(100% - 40px);
       margin-left: 40px;
@@ -66,18 +60,23 @@
       text-align: left;
     }
 
-    .steps p {
-      margin: 0 0 18px 0;
-      padding: 0;
+    .step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 18px;
       line-height: 1.7;
       text-align: left;
     }
 
-    .steps p:last-child {
-      margin-bottom: 0;
+    .step-number {
+      flex: 0 0 28px;
     }
 
-    /* 「初期設定完了です」 */
+    .step-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .complete {
       margin-top: 48px;
       margin-bottom: 48px;
@@ -85,7 +84,6 @@
       text-align: center;
     }
 
-    /* フォームボタン */
     a {
       display: block;
       padding: 16px 18px;
@@ -96,9 +94,7 @@
       font-size: 17px;
       font-weight: 600;
     }
-
   </style>
-
 </head>
 
 <body>
@@ -118,13 +114,33 @@
 
     <div class="steps">
 
-      <p>1. Safariのメニュー「・・・」から共有を押下</p>
+      <div class="step">
+        <div class="step-number">1.</div>
+        <div class="step-text">
+          Safariのメニュー「・・・」から共有を押下
+        </div>
+      </div>
 
-      <p>2.「ホーム画面に追加」をタップ</p>
+      <div class="step">
+        <div class="step-number">2.</div>
+        <div class="step-text">
+          「ホーム画面に追加」をタップ
+        </div>
+      </div>
 
-      <p>3. ホームに追加されたことを確認してください</p>
+      <div class="step">
+        <div class="step-number">3.</div>
+        <div class="step-text">
+          ホームに追加されたことを確認してください
+        </div>
+      </div>
 
-      <p>4. 店舗または自身のMicrosoftアドレスでログイン</p>
+      <div class="step">
+        <div class="step-number">4.</div>
+        <div class="step-text">
+          店舗または自身のMicrosoftアドレスでログイン
+        </div>
+      </div>
 
     </div>
 
