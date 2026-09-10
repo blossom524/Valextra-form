@@ -68,6 +68,7 @@
       text-align: left;
     }
 
+    /* モバイルでは2番の下だけ広め */
     .step.extra-space {
       margin-bottom: 58px;
     }
@@ -97,6 +98,16 @@
       text-decoration: none;
       font-size: 17px;
       font-weight: 600;
+    }
+
+    /* PC版 */
+    @media (min-width: 768px) {
+
+      /* PCでは2番の下も他と同じ間隔に戻す */
+      .step.extra-space {
+        margin-bottom: 32px;
+      }
+
     }
   </style>
 </head>
